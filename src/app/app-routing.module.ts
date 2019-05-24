@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' }
+  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: 'formacion', loadChildren: './formacion/formacion.module#FormacionPageModule' },
+  { path: 'experencia', loadChildren: './experencia/experencia.module#ExperenciaPageModule' },
+  { path: 'idiomas', loadChildren: './idiomas/idiomas.module#IdiomasPageModule' }
 ];
 @NgModule({
   imports: [
